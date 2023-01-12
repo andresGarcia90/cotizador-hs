@@ -1,0 +1,63 @@
+.card {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.875rem;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.advise {
+    color: #FAFAFA;
+    font-size: clamp(1.4375rem, 3.077vw + 0.822rem, 1.6875rem);
+    text-align: center;
+    padding-top: 9px;
+    font-family: 'GothamNarrowBold', 'Helvetica', 'Arial', sans-serif;
+    padding-bottom: 9px;
+    background-color: #34BBDA;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.header {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding-top: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 25px 25px 0px 0px;
+    padding-bottom: 16px;
+    background-color: #204F7D;
+}
+
+.price-month {
+    color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    font-family: 'GothamNarrowMedium', 'Helvetica', 'Arial', sans-serif;
+    justify-content: center;
+}
+
+.price-day {
+    color: #F6F6F6;
+    font-size: clamp(1rem, 3.07vw + 0.38rem, 1.25rem);
+    font-family: 'GothamNarrowLight', 'Helvetica', 'Arial', sans-serif;
+}
+
+.subheader {
+    color: #FAFAFA;
+    padding: 9px;
+    font-size: clamp(1.125rem, 1.5384vw + 0.817rem, 1.25rem);
+    text-align: center;
+    font-family: 'GothamNarrowMedium', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    background-color: #88D0EA;
+}
+
+.body{
+    display: flex;
+    align-items: flex-start;
+    background-color: #F6F6F6;
+}
+
+.footer{
+    
+}

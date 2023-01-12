@@ -1,0 +1,8 @@
+.button{
+    width: 178px;
+    color: #fff;
+    max-width: 100%;
+    font-family: 'GothamNarrowMedium', 'Helvetica', 'Arial', sans-serif;
+    border-radius: 30px;
+    background-color: #2ca2ca;
+}

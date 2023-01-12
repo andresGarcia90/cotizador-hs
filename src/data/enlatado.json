@@ -1,0 +1,92 @@
+{
+  "idEnlatado": "1",
+  "premio": 1049,
+  "tieneReintrego": "1",
+  "name": "plan 1049",
+  "items": [
+    { "idItem": "I01", "tituloItem": "Cámara de monitoreo", "valido": true },
+    {
+      "idItem": "I02",
+      "tituloItem": "Reintegro del 25% en Frávega",
+      "valido": true
+    },
+    {
+      "idItem": "I03",
+      "tituloItem": "Asistencias las 24 hs. todo el año",
+      "valido": true
+    },
+    {
+      "idItem": "I04",
+      "tituloItem": "Protegé a tu mascota y tu bicicleta",
+      "valido": true
+    },
+    {
+      "idItem": "I05",
+      "tituloItem": "Contratación segura y 100% online",
+      "valido": true
+    },
+    {
+      "idItem": "I06",
+      "tituloItem": "Beneficio exclusivo de Prosegur",
+      "valido": true
+    }
+  ],
+  "coberturas": [
+    {
+      "idCobertura": "cob1",
+      "tituloCobertura": "Incendio",
+      "montoCobertura": 4000000,
+      "infoCobertura": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a enim sit amet velit blandit mattis. Nunc nec mauris id justo gravida faucibus sit amet eu est. "
+    },
+    {
+      "idCobertura": "cob2",
+      "tituloCobertura": "Robo/Hurto + Daños",
+      "montoCobertura": 112000,
+      "infoCobertura": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a enim sit amet velit blandit mattis. Nunc nec mauris id justo gravida faucibus sit amet eu est. "
+    },
+    {
+      "idCobertura": "cob3",
+      "tituloCobertura": "Rotura de cristales",
+      "montoCobertura": 11000,
+      "infoCobertura": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a enim sit amet velit blandit mattis. Nunc nec mauris id justo gravida faucibus sit amet eu est. "
+    },
+    {
+      "idCobertura": "cob1",
+      "tituloCobertura": "Responsabilidad civil",
+      "montoCobertura": 800000,
+      "infoCobertura": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a enim sit amet velit blandit mattis. Nunc nec mauris id justo gravida faucibus sit amet eu est. "
+    }
+  ],
+  "asistencias": [
+    {
+      "idAsistencia": "A01",
+      "tituloAsistencia": "asistencia del hogar",
+      "descAsistencia": "Servicios de urgencia de cerrajería, electricidad, cristalería, plomería y gas.",
+      "montoAsistencia": 37500
+    },
+    {
+      "idAsistencia": "A02",
+      "tituloAsistencia": "asistencia integral",
+      "descAsistencia": "Te envíamos las compras del super y cubrimos los alimentos de tu freezer ante corte de luz.",
+      "montoAsistencia": 29000
+    },
+    {
+      "idAsistencia": "A03",
+      "tituloAsistencia": "asistencia ante siniestros",
+      "descAsistencia": "Traslado y guarda de muebles, hospedaje, servicio de lavandería y más.",
+      "montoAsistencia": 14000
+    },
+    {
+      "idAsistencia": "A04",
+      "tituloAsistencia": "asistencia de electros",
+      "descAsistencia": "Enviamos un técnico que repara heladera, lavarropas, calefones o cocinas.",
+      "montoAsistencia": 5000
+    },
+    {
+      "idAsistencia": "A05",
+      "tituloAsistencia": "asistencia tecnológica",
+      "descAsistencia": "Te asesoramos para que le saques todo el jugo a tus dispositivos tecnológicos.",
+      "montoAsistencia": 0
+    }
+  ]
+}

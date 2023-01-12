@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 // import cancelIcon from './../../img/cancel.svg';
-import PrimaryButton from './PrimaryButton'
-import successIcon from "./../../img/success.svg";
+import PrimaryButton from './PrimaryButton';
+import successIcon from './../../img/success.svg';
 import classes from './MainCard.module.css';
 import BorderButton from './BorderButton';
 const MainCard = (props) => {
@@ -35,23 +35,53 @@ const MainCard = (props) => {
             </p>
           </Col>
         </Row>
-      </Col>  
+      </Col>
       <Col xs={12}>
         <Row className={classes.item}>
-          <Col ><img src={successIcon} alt='success' className={classes.imagen}/><span>Cámara de monitoreo</span></Col>
+          <Col>
+            <img src={successIcon} alt="success" className={classes.imagen} />
+            <span>Cámara de monitoreo</span>
+          </Col>
+        </Row>
+      </Col>
+      <Col xs={12}>
+        <Row className={classes['asistencia-wrap']}>
+          <Col xs={12} className={classes['asistencia-title']}>
+            Asistencias
+          </Col>
+          <Col xs={12} className={classes.hasta}>
+            hasta
+          </Col>
+          <Col xs={12}>
+            <Row>
+              <Col xs={8} className={classes['asistencia-item-title']}>
+                ASISTENCIAS DEL HOGAR
+              </Col>
+              <Col xs={4} className={classes['asistencia-item-price']}>
+                $37.500
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={8} className={classes['asistencia-item-description']}>
+                <p>
+                  Servicios de urgencia de cerrajería, electricidad,
+                  cristalería, plomería y gas.
+                </p>
+              </Col>
+            </Row>
+          </Col>
         </Row>
       </Col>
       <Col xs={12}>
         <Row>
-          <Col xs={12} className='my-2'>
-            <BorderButton/>
+          <Col xs={12} className="my-2">
+            <BorderButton />
           </Col>
-          <Col xs={12} className='my-2'>
-            <PrimaryButton/>
+          <Col xs={12} className="my-2">
+            <PrimaryButton />
           </Col>
         </Row>
       </Col>
-     
     </Row>
   );
 };

@@ -10,7 +10,8 @@
     font-weight: 400;
     line-height: 1.5; */
 }
-.card-header{
+
+.card-header {
     color: #FAFAFA;
     padding: 0px;
     background-color: #34BBDA;
@@ -41,7 +42,7 @@
     background-color: #204F7D;
 }
 
-.price-month{
+.price-month {
     text-align: center;
     display: flex;
     align-content: center;
@@ -51,7 +52,7 @@
 
 .price-month-value {
     color: #F6F6F6;
-   font-size: clamp(2rem, 30.76vw - 4.15rem, 4.5rem);
+    font-size: clamp(2rem, 30.76vw - 4.15rem, 4.5rem);
 }
 
 .price-day {
@@ -71,11 +72,48 @@
     background-color: #F6F6F6;
 }
 
-.item{
+.item {
     text-align: start;
     padding: 10px 0px;
 }
 
-.imagen{
+.imagen {
     margin: 0px 20px;
+}
+
+.asistencia-wrap {
+    padding: 0px 30px;
+}
+
+.asistencia-title {
+    text-align: start;
+    color: #575756;
+    font-size: 20px;
+}
+
+.hasta {
+    color: #8F8F8F;
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.asistencia-item-title {
+    color: #575756;
+    font-size: 14px;
+    text-align: start;
+}
+
+.asistencia-item-price {
+    color: #575756;
+    font-size: 14px;
+    text-align: end;
+}
+
+.asistencia-item-description {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.875rem;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    text-align: start;
 }

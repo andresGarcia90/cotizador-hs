@@ -1,5 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { FiInfo } from "react-icons/fi";
+
 // import cancelIcon from './../../img/cancel.svg';
 import PrimaryButton from './PrimaryButton';
 import successIcon from './../../img/success.svg';
@@ -44,6 +46,25 @@ const MainCard = (props) => {
           </Col>
         </Row>
       </Col>
+
+      <Col xs={12}>
+        <Row>
+          <Col xs={12} className={classes.hasta}>
+            hasta
+          </Col>
+          <Col xs={12}>
+            <Row>
+              <Col xs={8} className={classes['cobertura-item-title']}>
+              Robo/Hurto + Daños <FiInfo />
+              </Col>
+              <Col xs={4} className={classes['cobertura-item-price']}>
+              $4.000.000
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Col>
+
       <Col xs={12}>
         <Row className={classes['asistencia-wrap']}>
           <Col xs={12} className={classes['asistencia-title']}>

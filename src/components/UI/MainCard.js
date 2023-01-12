@@ -1,35 +1,58 @@
 import React from 'react';
-import { Col, Row, Image, Container } from 'react-bootstrap';
-import cancelIcon from './../../img/cancel.svg';
+import { Col, Row } from 'react-bootstrap';
+// import cancelIcon from './../../img/cancel.svg';
 import PrimaryButton from './PrimaryButton'
-// import successIcon from "./../../img/success.svg";
+import successIcon from "./../../img/success.svg";
 import classes from './MainCard.module.css';
 import BorderButton from './BorderButton';
 const MainCard = (props) => {
   return (
-    <div className={classes.card}>
-      <div className={classes.advise}>
-        <p>Hogar con reintrego</p>
-      </div>
-      <div className={classes.header}>
-        <span>Desde</span>
-        <div className={classes['price-month']}>$ 1.141 / mes</div>
-        <div className={classes['price-day']}>$38,04 / día</div>
-      </div>
-      <div className={classes.subheader}>
-        Te devolvemos el 25% <br /> en un voucher de Frávega
-      </div>
-      <div className={classes.body}>
-        <div>
-          <Image src={cancelIcon} alt="cancel"></Image>
-          <p>Cámara de monitoreo</p>
-        </div>
-      </div>
-      <div className={classes.footer}>
-        <BorderButton></BorderButton>
-        <PrimaryButton></PrimaryButton>
-      </div>
-    </div>
+    <Row>
+      <Col className={classes['card-header']}>
+        <Row>
+          <Col className={classes.advise}>Hogar con reintrego</Col>
+        </Row>
+        <Row className={classes['header']}>
+          <Col xs="12" className="">
+            <span>Desde</span>
+          </Col>
+          <Col xs="12" className={classes['price-month']}>
+            <span>$</span>
+            <span className={classes['price-month-value']}>1.141</span>
+            <span>/ mes</span>
+          </Col>
+          <Col xs="12">
+            <p>
+              <span className="fw-bolder">$38,04</span> / día
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col className={classes.subheader}>
+            <p>
+              Protección básica para tu hogar <br />{' '}
+              <strong>Ideal alquiler</strong>
+            </p>
+          </Col>
+        </Row>
+      </Col>  
+      <Col xs={12}>
+        <Row className={classes.item}>
+          <Col ><img src={successIcon} alt='success' className={classes.imagen}/><span>Cámara de monitoreo</span></Col>
+        </Row>
+      </Col>
+      <Col xs={12}>
+        <Row>
+          <Col xs={12} className='my-2'>
+            <BorderButton/>
+          </Col>
+          <Col xs={12} className='my-2'>
+            <PrimaryButton/>
+          </Col>
+        </Row>
+      </Col>
+     
+    </Row>
   );
 };
 

@@ -1,17 +1,30 @@
+/* * {
+    font-family: 'GothamNarrowBold', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+} */
+
 .card {
-    color: rgba(0, 0, 0, 0.87);
+    /* color: rgba(0, 0, 0, 0.87);
     font-size: 0.875rem;
     font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.5; */
+}
+.card-header{
+    color: #FAFAFA;
+    padding: 0px;
+    background-color: #34BBDA;
+    width: 270px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size: 15px;
 }
 
 .advise {
-    color: #FAFAFA;
-    font-size: clamp(1.4375rem, 3.077vw + 0.822rem, 1.6875rem);
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
     padding-top: 9px;
-    font-family: 'GothamNarrowBold', 'Helvetica', 'Arial', sans-serif;
     padding-bottom: 9px;
     background-color: #34BBDA;
     border-top-left-radius: 25px;
@@ -28,36 +41,41 @@
     background-color: #204F7D;
 }
 
-.price-month {
-    color: #F6F6F6;
+.price-month{
+    text-align: center;
     display: flex;
-    align-items: center;
-    font-family: 'GothamNarrowMedium', 'Helvetica', 'Arial', sans-serif;
+    align-content: center;
     justify-content: center;
+    align-items: center;
+}
+
+.price-month-value {
+    color: #F6F6F6;
+   font-size: clamp(2rem, 30.76vw - 4.15rem, 4.5rem);
 }
 
 .price-day {
     color: #F6F6F6;
-    font-size: clamp(1rem, 3.07vw + 0.38rem, 1.25rem);
-    font-family: 'GothamNarrowLight', 'Helvetica', 'Arial', sans-serif;
+    font-size: 27px;
 }
 
 .subheader {
-    color: #FAFAFA;
     padding: 9px;
     font-size: clamp(1.125rem, 1.5384vw + 0.817rem, 1.25rem);
     text-align: center;
-    font-family: 'GothamNarrowMedium', 'Helvetica', 'Arial', sans-serif;
     line-height: 1;
     background-color: #88D0EA;
 }
 
-.body{
-    display: flex;
-    align-items: flex-start;
+.body {
     background-color: #F6F6F6;
 }
 
-.footer{
-    
+.item{
+    text-align: start;
+    padding: 10px 0px;
+}
+
+.imagen{
+    margin: 0px 20px;
 }

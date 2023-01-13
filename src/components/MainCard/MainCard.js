@@ -8,6 +8,7 @@ import successIcon from './../../img/success.svg';
 import classes from './MainCard.module.css';
 import BorderButton from '../UI/BorderButton';
 import MainProperties from './MainProperties';
+import AsistenciaList from './AsistenciaList';
 const MainCard = (props) => {
   const {premio, items, coberturas, asistencias} = props.enlatado;
   const premioPerDay = Math.round((premio * 100) / 30) / 100;
@@ -73,34 +74,7 @@ const MainCard = (props) => {
       )}
 
       {showExtra && (
-        <Col xs={12}>
-          <Row className={classes['asistencia-wrap']}>
-            <Col xs={12} className={classes['asistencia-title']}>
-              Asistencias
-            </Col>
-            <Col xs={12} className={classes.hasta}>
-              hasta
-            </Col>
-            <Col xs={12}>
-              <Row>
-                <Col xs={8} className={classes['asistencia-item-title']}>
-                  ASISTENCIAS DEL HOGAR
-                </Col>
-                <Col xs={4} className={classes['asistencia-item-price']}>
-                  $37.500
-                </Col>
-              </Row>
-              <Row>
-                <Col xs={8} className={classes['asistencia-item-description']}>
-                  <p>
-                    Servicios de urgencia de cerrajería, electricidad,
-                    cristalería, plomería y gas.
-                  </p>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Col>
+        <AsistenciaList asistencias={asistencias}/>
       )}
       <Col xs={12}>
         <Row>

@@ -81,15 +81,7 @@
     margin: 0px 20px;
 }
 
-.asistencia-wrap {
-    padding: 0px 30px;
-}
 
-.asistencia-title {
-    text-align: start;
-    color: #575756;
-    font-size: 20px;
-}
 
 .hasta {
     color: #8F8F8F;
@@ -98,25 +90,6 @@
     margin-bottom: 8px;
 }
 
-.asistencia-item-title {
-    color: #575756;
-    font-size: 14px;
-    text-align: start;
-}
-
-.asistencia-item-price {
-    color: #575756;
-    font-size: 14px;
-    text-align: end;
-}
-
-.asistencia-item-description {
-    color: rgba(0, 0, 0, 0.87);
-    font-size: 0.875rem;
-    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 400;
-    text-align: start;
-}
 
 .cobertura-item-title{
     font-size: 14px;

@@ -1,16 +1,20 @@
-.cobertura-item-title{
+.cobertura-item-title {
     font-size: 14px;
-    color: #204F7D;
     font-size: clamp(0.75rem, 1.538vw + 0.442rem, 0.875rem);
     font-family: 'GothamNarrowLight', 'Helvetica', 'Arial', sans-serif;
     text-align: start;
+    margin-bottom: 0.5rem;
 }
 
-.cobertura-item-price{
+.cobertura-item-price {
     color: #204F7D;
     font-size: clamp(0.75rem, 1.538vw + 0.442rem, 0.875rem);
     font-family: 'GothamNarrowBold', 'Helvetica', 'Arial', sans-serif;
     font-weight: 700;
     text-align: end;
 
+}
+
+.icon {
+    margin-left: 5px;
 }

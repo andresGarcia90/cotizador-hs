@@ -1,41 +1,33 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Button, Col, Row, Tooltip } from 'react-bootstrap';
+import React from 'react';
+import { Col, OverlayTrigger, Row, Tooltip } from 'react-bootstrap';
 import { FiInfo } from 'react-icons/fi';
 import classes from './Cobertura.module.css';
-import Overlay from 'react-bootstrap/Overlay';
 
 const Cobertura = (props) => {
-  const target = useRef();
-  useEffect(() => {
-    console.log(target.current);
-    // return () => {
-    // }
-  }, [target]);
-
-  const [show, setShow] = useState(false);
-
-  const clickHandler = () => {
-    setShow(!show);
-  };
-
-  console.log(target);
-
   const { title, info, price } = props;
+
+  const renderTooltip = (props) => (
+    <Tooltip
+      id="button-tooltip"
+      {...props}
+    >
+      {info}
+    </Tooltip>
+  );
+
   return (
     <Row>
       <Col xs={8} className={classes['cobertura-item-title']}>
-        {title}{' '}
-        <Button ref={target} onClick={clickHandler}  variant="light">
-        <FiInfo target={target}/>
-        </Button>
-        <Overlay target={target.current} show={show} placement="right">
-        {(props) => (
-          <Tooltip id="overlay-example" {...props}>
-            {info}
-          </Tooltip>
-        )}
-      </Overlay>
-        {/* <FiInfo target={target}  onClick={clickHandler}/> */}
+        {title}
+        <OverlayTrigger
+          placement="bottom"
+          delay={{ show: 250, hide: 400 }}
+          overlay={renderTooltip}
+        >
+          <span className={classes.icon}>
+            <FiInfo />
+          </span>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} className={classes['cobertura-item-price']}>
         ${price}

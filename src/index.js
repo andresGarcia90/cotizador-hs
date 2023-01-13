@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './css/custom.css';
+import { DescuentoContextProvider } from './context/DescuentoContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <DescuentoContextProvider>
     <App />
-  </React.StrictMode>
+  </DescuentoContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

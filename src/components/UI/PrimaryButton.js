@@ -1,8 +1,12 @@
 import React from 'react';
 import classes from './PrimaryButton.module.css';
 
-function PrimaryButton() {
-  return <button className={classes.button}>Contratar</button>;
-}
+const PrimaryButton = (props) => {
+  return (
+    <button className={classes.button} onClick={props.clickHandler}>
+      Contratar
+    </button>
+  );
+};
 
 export default PrimaryButton;

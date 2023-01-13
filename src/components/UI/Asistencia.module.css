@@ -2,18 +2,20 @@
     color: #575756;
     font-size: 14px;
     text-align: start;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .asistencia-item-price {
     color: #575756;
     font-size: 14px;
+    font-weight: bold;
     text-align: end;
 }
 
 .asistencia-item-description {
-    color: rgba(0, 0, 0, 0.87);
     font-size: 0.875rem;
-    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    color: #706f6f;
     font-weight: 400;
     text-align: start;
 }

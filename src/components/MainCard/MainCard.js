@@ -40,8 +40,8 @@ const MainCard = (props) => {
         </Row>
         <Row>
           <Col className={classes.subheader}>
-            <p>
-              Protección básica para tu hogar <br />{' '}
+            <p style={{margin: '10px'}}>
+              Protección básica para tu hogar <br />
               <strong>Ideal alquiler</strong>
             </p>
           </Col>

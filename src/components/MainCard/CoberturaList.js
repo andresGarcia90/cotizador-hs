@@ -8,7 +8,7 @@ const CoberturaList = (props) => {
     <Col xs={12}>
       <Row>
         <Col xs={12} className={classes.hasta}>
-          hasta
+          Hasta
         </Col>
         <Col xs={12}>
           {coberturas.map((cobertura) => {

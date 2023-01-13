@@ -13,7 +13,7 @@ const AsistenciaList = (props) => {
             Asistencias
           </Col>
           <Col xs={12} className={classes.hasta}>
-            hasta
+            Hasta
           </Col>
         </Row>
       </Col>

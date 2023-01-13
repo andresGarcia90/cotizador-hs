@@ -8,10 +8,10 @@ const ItemWithImage = (props) => {
   const icon = props.success ? successIcon : cancelIcon;
   const iconDescription = props.success ? 'Success' : 'Deny';
   return (
-    <Row className={classes.item}>
-      <Col>
+    <Row >
+      <Col className={classes.item}>
         <img src={icon} alt={iconDescription} className={classes.imagen} />
-        <span>{props.title}</span>
+        <span className={classes['item-desc']}>{props.title}</span>
       </Col>
     </Row>
   );

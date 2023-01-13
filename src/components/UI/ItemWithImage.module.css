@@ -1,9 +1,16 @@
 .item {
-    text-align: start;
+    display: flex;
     padding: 10px 0px;
 }
 
 .imagen {
     margin-right: 10px;
     width: 24px;
+}
+
+.item-desc {
+    color: #204F7D;
+    font-size: clamp(0.9375rem, 2.3076vw + 0.475rem, 1.125rem);
+    font-weight: 400;
+    font-family: 'GothamNarrowMedium', 'Helvetica', 'Arial', sans-serif;
 }

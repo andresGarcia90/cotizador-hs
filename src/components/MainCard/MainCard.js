@@ -8,7 +8,7 @@ import AsistenciaList from './AsistenciaList';
 import CoberturaList from './CoberturaList';
 
 const MainCard = (props) => {
-  const {premio, items, coberturas, asistencias} = props.enlatado;
+  const { premio, items, coberturas, asistencias } = props.enlatado;
   const premioPerDay = Math.round((premio * 100) / 30) / 100;
   const [borderText, setBorderText] = useState('¿Qué me cubre?');
   const [showExtra, setShowExtra] = useState(false);
@@ -47,24 +47,26 @@ const MainCard = (props) => {
           </Col>
         </Row>
       </Col>
-      <Col xs={12}>
-       <MainProperties properties={items}/>
-      </Col>
 
-      {showExtra && (
-        <CoberturaList coberturas={coberturas} />
-      )}
-
-      {showExtra && (
-        <AsistenciaList asistencias={asistencias}/>
-      )}
-      <Col xs={12}>
+      <Col xs={12} className={classes['card-body']}>
         <Row>
-          <Col xs={12} className="my-2">
-            <BorderButton clickHandler={borderClickHandler} text={borderText} />
+          <Col xs={12}>
+            <MainProperties properties={items} />
           </Col>
-          <Col xs={12} className="my-2">
-            <PrimaryButton />
+          {showExtra && <CoberturaList coberturas={coberturas} />}
+          {showExtra && <AsistenciaList asistencias={asistencias} />}
+          <Col xs={12}>
+            <Row>
+              <Col xs={12} className="my-2">
+                <BorderButton
+                  clickHandler={borderClickHandler}
+                  text={borderText}
+                />
+              </Col>
+              <Col xs={12} className="my-2">
+                <PrimaryButton />
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Col>

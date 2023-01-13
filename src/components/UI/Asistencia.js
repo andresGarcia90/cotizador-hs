@@ -4,6 +4,7 @@ import classes from './Asistencia.module.css';
 
 const Asistencia = (props) => {
   const { title, price, description } = props;
+  const priceUpdated = price === 0 ? 'SIN TOPE' : `$${price}`;
   return (
     <Col xs={12}>
       <Row>
@@ -11,7 +12,7 @@ const Asistencia = (props) => {
           {title}
         </Col>
         <Col xs={4} className={classes['asistencia-item-price']}>
-          ${price}
+          {priceUpdated}
         </Col>
       </Row>
       <Row>

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import classes from './Asistencia.module.css';
+import formatearNumero from './../../utils/numberUtils';
 
 const Asistencia = (props) => {
   const { title, price, description } = props;
-  const priceUpdated = price === 0 ? 'SIN TOPE' : `$${price}`;
+  const priceUpdated = price === 0 ? 'SIN TOPE' : `$${formatearNumero(price)}`;
   return (
     <Col xs={12}>
       <Row>

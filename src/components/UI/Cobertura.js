@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, OverlayTrigger, Row, Tooltip } from 'react-bootstrap';
 import { FiInfo } from 'react-icons/fi';
+import formatearNumero from '../../utils/numberUtils';
 import classes from './Cobertura.module.css';
 
 const Cobertura = (props) => {
@@ -30,7 +31,7 @@ const Cobertura = (props) => {
         </OverlayTrigger>
       </Col>
       <Col xs={4} className={classes['cobertura-item-price']}>
-        ${price}
+        ${formatearNumero(price)}
       </Col>
     </Row>
   );

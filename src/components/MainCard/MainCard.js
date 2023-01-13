@@ -6,6 +6,7 @@ import BorderButton from '../UI/BorderButton';
 import MainProperties from './MainProperties';
 import AsistenciaList from './AsistenciaList';
 import CoberturaList from './CoberturaList';
+import formatearNumero from '../../utils/numberUtils';
 
 const MainCard = (props) => {
   const { premio, items, coberturas, asistencias } = props.enlatado;
@@ -29,12 +30,12 @@ const MainCard = (props) => {
           </Col>
           <Col xs="12" className={classes['price-month']}>
             <span>$</span>
-            <span className={classes['price-month-value']}>{premio}</span>
+            <span className={classes['price-month-value']}>{formatearNumero(premio)}</span>
             <span>/ mes</span>
           </Col>
           <Col xs="12">
             <p>
-              <span className="fw-bolder">${premioPerDay}</span> / día
+              <span className="fw-bolder">${formatearNumero(premioPerDay)}</span> / día
             </p>
           </Col>
         </Row>

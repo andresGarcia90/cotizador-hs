@@ -12,13 +12,13 @@ const MainCard = (props) => {
   const premioPerDay = Math.round((premio * 100) / 30) / 100;
   const [borderText, setBorderText] = useState('¿Qué me cubre?');
   const [showExtra, setShowExtra] = useState(false);
-  const borderClickHandler = (event) => {
+  const borderClickHandler = () => {
     setShowExtra(!showExtra);
     setBorderText(!showExtra ? 'Mostrar menos' : '¿Qué me cubre?');
   };
 
   return (
-    <Row>
+    <Row className={classes.card}>
       <Col className={classes['card-header']}>
         <Row>
           <Col className={classes.advise}>Hogar con reintrego</Col>

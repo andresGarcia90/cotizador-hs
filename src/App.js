@@ -1,5 +1,5 @@
 import './App.css';
-import MainCard from './components/UI/MainCard';
+import MainCard from './components/MainCard/MainCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import enlatado from './data/enlatado.json';
 

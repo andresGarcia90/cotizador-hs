@@ -3,10 +3,11 @@ import { Col, Row } from 'react-bootstrap';
 import { FiInfo } from 'react-icons/fi';
 
 // import cancelIcon from './../../img/cancel.svg';
-import PrimaryButton from './PrimaryButton';
+import PrimaryButton from '../UI/PrimaryButton';
 import successIcon from './../../img/success.svg';
 import classes from './MainCard.module.css';
-import BorderButton from './BorderButton';
+import BorderButton from '../UI/BorderButton';
+import MainProperties from './MainProperties';
 const MainCard = (props) => {
   const {premio, items, coberturas, asistencias} = props.enlatado;
   const premioPerDay = Math.round((premio * 100) / 30) / 100;
@@ -48,12 +49,7 @@ const MainCard = (props) => {
         </Row>
       </Col>
       <Col xs={12}>
-        <Row className={classes.item}>
-          <Col>
-            <img src={successIcon} alt="success" className={classes.imagen} />
-            <span>Cámara de monitoreo</span>
-          </Col>
-        </Row>
+       <MainProperties properties={items}/>
       </Col>
 
       {showExtra && (

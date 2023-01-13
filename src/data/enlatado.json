@@ -4,7 +4,11 @@
   "tieneReintrego": "1",
   "name": "plan 1049",
   "items": [
-    { "idItem": "I01", "tituloItem": "Cámara de monitoreo", "valido": true },
+    {
+      "idItem": "I01",
+      "tituloItem": "Cámara de monitoreo",
+      "valido": false
+    },
     {
       "idItem": "I02",
       "tituloItem": "Reintegro del 25% en Frávega",

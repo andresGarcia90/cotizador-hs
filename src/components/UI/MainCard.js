@@ -8,12 +8,13 @@ import successIcon from './../../img/success.svg';
 import classes from './MainCard.module.css';
 import BorderButton from './BorderButton';
 const MainCard = (props) => {
+  const {premio, items, coberturas, asistencias} = props.enlatado;
+  const premioPerDay = Math.round((premio * 100) / 30) / 100;
   const [borderText, setBorderText] = useState('¿Qué me cubre?');
   const [showExtra, setShowExtra] = useState(false);
   const borderClickHandler = (event) => {
     setShowExtra(!showExtra);
     setBorderText(!showExtra ? 'Mostrar menos' : '¿Qué me cubre?');
-    console.log(borderText);
   };
 
   return (
@@ -28,12 +29,12 @@ const MainCard = (props) => {
           </Col>
           <Col xs="12" className={classes['price-month']}>
             <span>$</span>
-            <span className={classes['price-month-value']}>1.141</span>
+            <span className={classes['price-month-value']}>{premio}</span>
             <span>/ mes</span>
           </Col>
           <Col xs="12">
             <p>
-              <span className="fw-bolder">$38,04</span> / día
+              <span className="fw-bolder">${premioPerDay}</span> / día
             </p>
           </Col>
         </Row>

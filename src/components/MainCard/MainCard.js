@@ -56,7 +56,7 @@ const MainCard = (props) => {
           </Col>
           {showExtra && <CoberturaList coberturas={coberturas} />}
           {showExtra && <AsistenciaList asistencias={asistencias} />}
-          <Col xs={12}>
+          <Col xs={12} className='mt-3'>
             <Row>
               <Col xs={12} className="my-2">
                 <BorderButton
